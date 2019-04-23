@@ -1,0 +1,165 @@
+<!-- “I certify that this submission is my own original work” 
+Matthew Alexander
+R00116657 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 6 - Menu</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="hw6js.js"></script>
+</head>
+<body>
+    
+   <div id="jumbo" class="jumbotron container">
+  <h1 class="display-4">Javascript HW6 Menu</h1>
+  <p class="lead">This is a menu for Vegetarians, Vegans, and Normal People.</p>
+  <hr class="my-4">
+</div>
+    <form class="container">
+    <input id="userName" type="text" value="" placeholder="Name">
+        <input id="userAddress" type="text" value="" placeholder="Address">
+    </form>
+    
+    <br>
+    
+    <p class="container">Disclaimer: By eating at our restaurant you are fully responsible for any dietary restrictions or food allergies and must make your server aware of such risks prior to ordering, please check here in accordance that you understand.</p>
+<div class="form-check container">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    I Understand
+  </label>
+</div>
+    
+    <br>
+    
+    <form id="menuForm" class="container">
+        <h4>Please select your Dietary Restrictions</h4>
+        <p>
+            <button type="button" id="vegetarianMenu" class="btn btn-danger btn-lg btn-block">Vegetarian Menu</button>
+            <button type="button" id="veganMenu" class="btn btn-light btn-lg btn-block">Vegan Menu</button>
+            <button type="button" id="regularMenu" class="btn btn-primary btn-lg btn-block">Regular Menu</button>
+        </p>    
+    </form>
+    <br>
+    <form class="container smBTN">
+        <h4>Jump To:</h4>
+        <button id="btnApp" type="button" class="btn btn-outline-secondary">Appetizers</button>
+        <button id="btnSal" type="button" class="btn btn-outline-secondary">Salads</button>
+        <button id="btnSan" type="button" class="btn btn-outline-secondary">Sandwiches</button>
+        <button id="btnEnt" type="button" class="btn btn-outline-secondary">Entrees</button>
+        <button id="btnDes" type="button" class="btn btn-outline-secondary">Desserts</button>
+    </form>
+    <br>
+    
+<div class="container menu" id="totalMenu">
+    <h2>Reds Restaurant Menu</h2>
+    <p id="appStart">
+        <strong>
+            Appetizers
+        </strong>
+    </p>
+    <ul>
+        <li class="vegt">Spinach Artichoke Dip w/ Chips: $8.99</li>
+            <p class="vegt">Everyones favorite sharable, melted cheeses with spinach served with house made tortilla chips.</p>
+        <li class="meat">Buffalo Wings(6): $9.99</li>
+            <p class="meat">Our jumbo juicy wings smothered in tangy buffalo sauce served with a side of celery and bleu cheese dressing</p>
+        <li class="vegn">Roasted Veggie Platter w/ Dip: $6.99</li>
+            <p class="vegn">Flame roasted assorted vegetables charred perfectly with a side of spicy ranch aioli</p>
+        <li class="vegt">French Onion Soup: $4.99</li>
+            <p class="vegt">Slow cooked onion broth with roasted onions and a hearty chuck of sourdough bread topped with jarlsburg cheese broiled to melted perfection</p>
+        <li class="vegt">Mozzarella Sticks w/ Marinara: $5.99</li>
+            <p class="vegt">Breaded and fried to golden perfection served with tangy mariana sauce</p>
+        <li class="vegn">Roasted Red Pepper Dip: $6.99</li>
+            <p class="vegn">Roasted red peppers, raisins, and capers bring a complex, smoky-sweet flavor to this easy dip. Serve it with Roasted Eggplant Dip and pita chips.</p>
+        <li class="vegn">Spring Rolls w/ Carrot Ginger Dipping Sauce: $6.99</li>
+            <p class="vegn">Roll up red bell pepper, beets, carrot, daikon, cucumber, and radish sprouts in delicate rice paper wrappers and serve with a tangy ginger-soy dipping sauce.</p>
+    </ul>
+    <p id="salStart">
+        <strong>
+            Salads
+        </strong>
+        
+    </p>
+    <ul>
+        <li class="meat">Cobb Salad: $10.99</li>
+            <p class="meat">Made with chopped salad greens (iceberg lettuce, watercress, endives and romaine lettuce), tomato, crisp bacon, boiled, grilled or roasted (but not fried) chicken breast, hard-boiled eggs, avocado, chives, Roquefort cheese, and red-wine vinaigrette.</p>
+        <li class="meat">Spinach Salad: $11.99</li>
+            <p class="meat">Baby Spinach, Fresh mozzarella, Sliced mushrooms, Boiled Egg, Cherry Tomatoes, Cucumbers, Herb Croutons and Grilled marinated Chicken Breast</p>
+        <li class="vegt">Caesar Salad: $9.99</li>
+            <p class="vegt">Chopped Romaine Lettuce Hearts Tossed in a Creamy Caesar Dressing with Croutons and Shaved Parmesan Cheese</p>
+        <li class="vegn">Cranberry Pecan Salad: $10.99</li>
+            <p class="vegn">Tomato, Cucumber, Dried Cranberries and Candied Pecans</p>
+        <li class="meat">Chef's Salad: $12.99</li>
+            <p class="meat">Chopped Turkey, Ham, Roast Beef, Swiss Cheese, Tomato, Cucumber and Black Olives</p>
+        <li class="vegn">Chickpea Avocado Salad: $10.99</li>
+            <p class="vegn">This simple chickpea avocado salad with a bit of quinoa, fresh tomatoes, cilantro and red onion.</p>
+    </ul>
+     <p id="sanStart">
+        <strong>
+            Sandwiches
+        </strong>
+    </p>
+    <ul>
+        <li class="meat">Bistro Steak Sandwich: $15.99</li>
+            <p class="meat">Marinated and Seasoned Chuck Tender Steak Medallions served on a Fresh Baked Garlic Bun with Caramelized Onions and Mushrooms, topped with Shaved Parmesan Cheese - Served with French Fries, Onion Rings, Leaf Lettuce and Tomato</p>
+        <li class="meat">Ultimate Grilled Cheese: $11.99</li>
+            <p class="meat">Three Slices of Grilled Rye Bread with Cheddar, Swiss, Mozzarella and Provolone Cheese, Crisp Bacon and Avocado</p>
+        <li class="meat">Italian Chicken Sandwich: $9.99</li>
+            <p class="meat">Grilled Chicken Breast, Topped with Pepperoni, Ham, Melted Provolone, Tomato Bruschetta, Shaved Parmesan and Pesto on a Hero</p>
+        <li class="meat">Honey Fried Chicken Sandwich: $13.99</li>
+            <p class="meat">Twin Fried Chicken Cutlets, Crisp Bacon and Swiss Cheese served on a Fresh Baked Toasted Bun with Honey Mustard, Lettuce and Tomato</p>
+        <li class="vegt">Eggplant Bistro Sandwich: $12.99</li>
+            <p class="vegt">Fried Eggplant with Mozzarella cheese and roasted red peppers drizzled with balsamic reduction</p>
+        <li class="vegn">Vegan B.L.T.: $11.99</li>
+            <p class="vegn">Smoky eggplant bacon, crisp lettuce, ripe tomato, and a homemade tahini based mayo, sandwiched between two toasty pieces of your favorite bread. </p>
+        <li class="vegn">Vegan Portobello CheeseSteak Sandwich: $11.99</li>
+            <p class="vegn">With jalapeno and red pepper flakes this combination of meaty mushrooms and creamy cashew cheese have become a lunchtime favorite </p>
+    </ul>
+     <p id="entStart">
+        <strong>
+            Entrees
+        </strong>
+    </p>
+    <ul>
+        <li class="meat">Pork Chops: $21.99</li>
+            <p class="meat">Thick, Center Cut Chop, Lightly Seasoned and Char-Grilled, served with Yukon Gold Mashed Potatoes and Asparagus</p>
+        <li class="meat">Roumanian Steak: $29.99</li>
+            <p class="meat">With Crispy Onion Rings, served with Yukon Gold Mashed Potatoes and Asparagus</p>
+        <li class="meat">Lamb Chops: $26.99</li>
+            <p class="meat">Served with Yukon Gold Mashed Potatoes and Asparagus</p>
+        <li class="vegn">Butternut Squash Ravioli: $18.99</li>
+            <p class="vegn">Non-Egg Pasta filled with fire roasted butternut squash puree served with a burnt sugar demiglaze</p>
+        <li class="vegt">Eggplant Parmesan: $19.99</li>
+            <p class="vegt">Fried Eggplant topped with Mozzarella cheese and roasted red peppers smoothered in marinara sauce</p>
+        <li class="vegn">Zucchini Gyro Fritters: $16.99</li>
+            <p class="vegn">Crispy zucchini fritters get the gyro treatment with hummus and a lemony yogurt sauce.</p>
+    </ul>
+      <p id="desStart">
+        <strong>
+            Desserts
+        </strong>
+    </p>
+    <ul>
+        <li class="vegt">NY Style Cheesecake: $4.99</li>
+            <p class="vegt">Creamy and decadent cheesecake graham cracker crust</p>
+        <li class="vegt">Banana Cream Pie: $3.99</li>
+            <p class="vegt">Graham cracker crust, banana pudding, fresh bananas, sweet whipped cream</p>
+        <li class="vegt">Brownie Sundae: $4.99</li>
+            <p class="vegt">Homemade decadent brownie,vanilla bean ice cream, caramel, vanilla and chocolate sauces, whipped cream</p>
+        <li class="vegn">Vegan Fudge Square: $3.99</li>
+            <p class="vegn">The base for this recipe is coconut, cocoa butter, nut butter, and cacao powder. This creates a fudgy, rich texture with the perfect amount of chocolate flavor.</p>
+        </ul>
+</div>
+    <br>
+<form class="container">
+    <button type="button" id="btnReset" class="btn btn-light btn-lg btn-block">Reset</button>
+    </form>
+<br>
+
+<footer class="container">Design by Matthew Ryan Alexander</footer>
+    
+</body>
+</html>
